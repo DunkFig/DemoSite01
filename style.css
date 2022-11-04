@@ -1,0 +1,41 @@
+/* 
+The first stylization is made in this bracket which contains this star, 
+this simply means: 'apply this stylization to EVERYTHING', this is really useful for certain cases,
+in this case, I wanted to make sure the page was unscrollable, and also had no margin. */
+
+*{
+    overflow: hidden;
+    margin: 0
+}
+
+
+/* Ignore this for right now, this is just an aesthetic thing I'll talk about later. */
+#div1::-webkit-scrollbar {
+    display: none;
+  }
+
+/* HERE WE GO. Right here are all the styling changes I've added to div1 
+(which is also inhereited by our nested div because it's in div1), 
+go ahead and try to make sense of this. If you don't understand something 
+google it, w3Schools is the best place to find documentation of html related stuff. */
+
+/* Try and change a few things, what happens? */
+
+#div1{
+position: absolute;
+overflow-y: scroll;
+height: 600px;
+font-size: 40px;
+color:rgba(200, 207, 174, 1);
+width: 500px;
+margin: 150px;
+z-index: 2;
+}
+
+
+#myContainer {
+margin: 0;
+position: absolute;
+overflow: hidden;
+z-index: -1;
+}

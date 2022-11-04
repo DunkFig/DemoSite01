@@ -1,0 +1,60 @@
+<!-- OK GREAT you have come to hang out in the back rooms of the html! 
+You'll notice that you didn't see this text on the website from before, 
+just like in our javascript I've commented out this section of text, 
+in HTML the notation I use to do this might seem a little different, but the technique
+is the same, I can just highlight whatever code I want, press cntrl + /  (control + backslash)
+and POOF! Go ahead and try it out! -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>COOL PRACTICE PAGE</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+	<script src="sketch.js"></script>
+
+    <div id="div1">
+        <B>Websites: HTML, CSS, and JAVASCRIPT</B>
+        <br>
+        <br>
+        <div style="font-size: 24px">
+            The main purpose of this website is for you to take a look at how I'm organizing things. 
+            Explore this website and then take a 
+            look at the code underneath it. 
+            <br>
+            <br>
+            This page will be confusing if you're not reading it as an html file in visual studios code.
+            If you haven't already done so go ahead and open that up.
+            <br>
+            <br>
+            <b>THE FIRST DIV</b> has an ID of 'div1', with an ID I can now refer to this DIV from either my javascript sketch,
+            or my css file. Which is extremely useful.
+            Say for instance I wanted to generate language to be added here, or potentially use this Div as a chat window for a Bot, 
+            I can now have the front facing elements of my html 
+            interwine with the thinking elements of my code in javascript. Similarly, 
+            the CSS file allows me style my divs in a more precise and dynamic way - although I can also do this in my html... 
+            Which brings us to....
+            <br>
+            <br>
+            <b>THE SECOND DIV</b><i>the div inside the div</i>
+            As you can see this second <i>nested div</i> does not have an ID, however I am changing the style of the page on the fly.
+            The 'font-size' of the page is being changed to 24px
+        </div>
+    </div>
+
+<!-- This is the div that acts as a parent for our p5.js canvas, 
+lets navigate over to the style css page and see how we're manipulating the canvas from there -->
+
+    <div id="myContainer"></div>
+</body>
+</html>
